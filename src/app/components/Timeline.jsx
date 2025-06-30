@@ -51,56 +51,58 @@ export function TimelineDemo() {
     ],
   }
 
-  const projects = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with modern UI",
-      longDescription:
-        "A comprehensive e-commerce platform built with Next.js and TypeScript. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard. The platform uses MongoDB for data storage and implements real-time inventory management.",
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQEtHmqfBnU50A/feedshare-shrink_2048_1536/B4DZdpdweWGsAs-/0/1749821099265?e=1753920000&v=beta&t=Z7qtMza00_C5aRh8ChkPiZAhZ_tEy6hqRSEjPffhlL0",
-      technologies: ["Next.js", "TypeScript", "MongoDB", "Stripe", "Tailwind CSS"],
-      githubUrl: "https://github.com/yourusername/ecommerce",
-      liveUrl: "https://your-ecommerce.vercel.app",
-      category: "Web Development",
-    },
-    {
-      id: 2,
-      title: "AI Chat Application",
-      description: "Real-time chat app with AI integration",
-      longDescription:
-        "An intelligent chat application that integrates OpenAI's GPT models for enhanced conversations. Built with React and Socket.io for real-time messaging, featuring user authentication, chat rooms, message history, and AI-powered responses. The backend is powered by Node.js and Express.",
-      image: "/placeholder.svg?height=400&width=600",
-      technologies: ["React", "Node.js", "Socket.io", "OpenAI API", "MongoDB"],
-      githubUrl: "https://github.com/yourusername/ai-chat",
-      liveUrl: "https://your-chat-app.vercel.app",
-      category: "AI/ML",
-    },
-    {
-      id: 3,
-      title: "DeFi Trading Platform",
-      description: "Decentralized finance trading interface",
-      longDescription:
-        "A decentralized finance (DeFi) trading platform built on Ethereum blockchain. Features include token swapping, liquidity provision, yield farming, and portfolio tracking. Smart contracts are developed using Solidity and deployed using Hardhat. The frontend provides an intuitive interface for interacting with DeFi protocols.",
-      image: "/placeholder.svg?height=400&width=600",
-      technologies: ["Solidity", "React", "Web3.js", "Hardhat", "Ethereum"],
-      githubUrl: "https://github.com/yourusername/defi-platform",
-      liveUrl: "https://your-defi-platform.vercel.app",
-      category: "Blockchain",
-    },
-    {
-      id: 4,
-      title: "IoT Dashboard",
-      description: "Real-time IoT device monitoring system",
-      longDescription:
-        "A comprehensive IoT dashboard for monitoring and controlling connected devices. Built with Django backend and React frontend, featuring real-time data visualization, device management, alert systems, and historical data analysis. Supports multiple IoT protocols and provides RESTful APIs for device integration.",
-      image: "/placeholder.svg?height=400&width=600",
-      technologies: ["Django", "React", "PostgreSQL", "Redis", "MQTT"],
-      githubUrl: "https://github.com/yourusername/iot-dashboard",
-      liveUrl: "https://your-iot-dashboard.herokuapp.com",
-      category: "IoT",
-    },
-  ]
+ const projects = [
+  {
+    id: 1,
+    title: "MetaBazaar",
+    description: "NFT marketplace with wallet authentication and IPFS integration",
+    longDescription:
+      "MetaBazaar is a feature-rich NFT marketplace built with seamless user experience in mind. It includes NFT minting with metadata storage on IPFS, wallet authentication using MetaMask, user profiles, and advanced search/filter functionality for discovering NFTs. The platform empowers creators and collectors with robust blockchain-based interactions.",
+    image: "https://media.licdn.com/dms/image/v2/D4D22AQEtHmqfBnU50A/feedshare-shrink_2048_1536/B4DZdpdweWGsAs-/0/1749821099265?e=1753920000&v=beta&t=Z7qtMza00_C5aRh8ChkPiZAhZ_tEy6hqRSEjPffhlL0",
+    technologies: ["Next.js", "TypeScript", "IPFS", "MetaMask", "Tailwind CSS"],
+    githubUrl: "https://github.com/rohiit257/MetaBazaar",
+    liveUrl: "https://metabazaar.vercel.app/",
+    category: "Web3",
+  },
+  {
+    id: 2,
+    title: "GetMeAJob",
+    description: "Job portal web app built with the MERN stack",
+    longDescription:
+      "GetMeAJob is a full-stack job portal application designed to connect job seekers and employers. It includes secure user authentication, job posting, job applications, and real-time messaging. Built using MongoDB, Express, React, and Node.js, the app also features JWT-based authentication, REST APIs, and a seamless communication interface between users.",
+    image: "/getmejob.png",
+    technologies: ["MongoDB", "Express", "React", "Node.js", "JWT"],
+    githubUrl: "https://github.com/yourusername/getmeajob",
+    liveUrl: "https://getmeajob.vercel.app",
+    category: "Web Development",
+  },
+  {
+    id: 3,
+    title: "AlgoVision",
+    description: "Interactive algorithm visualizer with animations",
+    longDescription:
+      "AlgoVision is a visual learning platform for mastering fundamental algorithms through animations and interactive controls. It supports sorting algorithms like Insertion Sort, Selection Sort, Merge Sort, and Quick Sort, as well as Binary Search and Kadane's Algorithm. Built with Next.js and styled using Tailwind CSS, the project leverages Framer Motion for animations and shadcn/ui for modern UI components.",
+    image: "/alogvisual.png",
+    technologies: ["Next.js", "TypeScript", "Framer Motion", "shadcn/ui", "Tailwind CSS"],
+    githubUrl: "https://github.com/yourusername/algovision",
+    liveUrl: "https://algovision.vercel.app",
+    category: "Education",
+  },
+  {
+    id: 4,
+    title: "AirAGBot",
+    description: "AI-powered chatbot for Computer Science subjects",
+    longDescription:
+      "AirAGBot is an intelligent chatbot trained on core Computer Science subjects like DBMS, CN, OS, Blockchain, and OOP. It uses pre-embedded PDFs and ChromaDB for document retrieval, LangChain for contextual prompting, and Gemini AI for natural language responses. The bot is accessible via both a command-line interface (CLI) and a web interface built with Streamlit.",
+    image: "/placeholder.svg?height=400&width=600",
+    technologies: ["Python", "LangChain", "Gemini AI", "ChromaDB", "Streamlit"],
+    githubUrl: "https://github.com/yourusername/airagbot",
+    liveUrl: "https://airagbot.streamlit.app",
+    category: "AI/ML",
+  },
+];
+
+
 
   const data = [
     {
@@ -159,15 +161,37 @@ export function TimelineDemo() {
             </div>
           </div>
 
-          <div className="pt-4 border-t border-neutral-200 dark:border-neutral-700">
-            <h4 className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-semibold mb-3">
-              📝 Technical Insights & Learning
+          <div className="pt-6 border-t border-neutral-200 dark:border-neutral-700">
+            <h4 className="text-neutral-800 dark:text-neutral-100 text-base md:text-lg font-bold mb-4 flex items-center gap-2">
+              <span role="img" aria-label="notebook">📝</span>
+              Technical Insights & Learning
             </h4>
-            <LinkPreview url="https://rohitdebugbugs-portfolio.vercel.app/blogs">
-              <span className="text-neutral-900 dark:text-neutral-100 font-medium hover:underline">
-                Read My Technical Blogs →
-              </span>
-            </LinkPreview>
+            <div className="flex flex-col md:flex-row md:gap-6 gap-3">
+              <LinkPreview url="https://rohitdebugbugs-portfolio.vercel.app/blogs">
+                <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-900/80 to-purple-900/80 border border-indigo-700 hover:scale-105 transition-transform shadow-md">
+                  <ExternalLink className="w-4 h-4 text-indigo-300" />
+                  <span className="text-indigo-100 font-medium hover:underline">
+                    Read My Technical Blogs
+                  </span>
+                </div>
+              </LinkPreview>
+              <LinkPreview url="https://rohitdebugbugs-portfolio.vercel.app/research-papers">
+                <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-green-900/80 to-emerald-900/80 border border-green-700 hover:scale-105 transition-transform shadow-md">
+                  <ExternalLink className="w-4 h-4 text-green-300" />
+                  <span className="text-green-100 font-medium hover:underline">
+                    Research Papers
+                  </span>
+                </div>
+              </LinkPreview>
+              <LinkPreview url="https://rohitdebugbugs-portfolio.vercel.app/certificates">
+                <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-yellow-900/80 to-orange-900/80 border border-yellow-700 hover:scale-105 transition-transform shadow-md">
+                  <ExternalLink className="w-4 h-4 text-yellow-300" />
+                  <span className="text-yellow-100 font-medium hover:underline">
+                    Certificates
+                  </span>
+                </div>
+              </LinkPreview>
+            </div>
           </div>
         </div>
       ),

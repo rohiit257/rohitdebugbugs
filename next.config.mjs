@@ -6,7 +6,8 @@ const nextConfig = {
           "api.microlink.io",
           "cdn.hashnode.com",
           "res.cloudinary.com",
-          "media.licdn.com"
+          "media.licdn.com",
+          "drive.google.com"
         ],
       },
 };

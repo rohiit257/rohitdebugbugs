@@ -19,13 +19,28 @@ export function AuroraBackgroundDemo() {
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-4">
         <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
-             Hi, I’m Rohit Shahi!
+             <span className="hidden md:inline">Hi, I’m Rohit Shahi!</span>
+             <span className="inline md:hidden">
+                <span className="block">Hi,</span>
+                <span className="block">I’m Rohit Shahi!</span>
+             </span>
         </div>
-        <div
-          className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-            Engineering student with skills in <FlipWords words={["Web Development","Blockchain","AI"]}/>
-            <br />
-            <div className="text-center">Welcome to my portfolio!</div>
+        <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 text-center">
+            {/* Show FlipWords on md+ screens, static text on mobile */}
+            <span className="hidden md:inline">
+              Engineering student with skills in <FlipWords words={["Web Development","Blockchain","AI"]}/>
+            </span>
+            <span className="inline md:hidden">
+              <span className="block">Engineering student</span>
+              <span className="block">with skills in</span>
+              <span className="block">Web Development, Blockchain, AI</span>
+            </span>
+            <span className="hidden md:block">
+              <div className="text-center">Welcome to my portfolio!</div>
+            </span>
+            <span className="block md:hidden mt-2">
+              Welcome to my portfolio!
+            </span>
         </div>
         <div className="justify-center align-middle flex gap-4">
         <button

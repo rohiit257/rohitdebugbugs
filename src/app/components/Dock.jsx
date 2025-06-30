@@ -15,30 +15,32 @@ export function FloatingDockDemo() {
   const links = [
 
     {
-      title: "Twitter",
+      title: "X",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://x.com/rohitdebugbugs",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/rohiit257",
     },
     {
         title: "LinkedIn",
         icon: (
             <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        )
+        ),
+        href: "https://www.linkedin.com/in/rohit-shahi-152661253/",
     },
     {
         title: "Leetcode",
         icon: (
             <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-        )
+        ),
+        href: "https://leetcode.com/u/rohitt257/",
     }
   ];
   return (
