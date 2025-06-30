@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
-import { NavbarDemo } from '../components/Navbar';
 import { CardDemo } from '../components/CardDemo';
 import { BackgroundBoxesDemo } from '../components/Boxes';
 
@@ -96,7 +95,7 @@ export default function PublicationPage() {
   if (loading) {
     return (
       <>
-        <NavbarDemo />
+      
         <BackgroundBoxesDemo />
         <div className="container mx-auto px-4 py-8 mt-20">
           {/* Heading Section */}
