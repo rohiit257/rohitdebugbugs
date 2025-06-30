@@ -116,7 +116,7 @@ export function TimelineDemo() {
             <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-6 leading-relaxed">
               Currently pursuing B.Tech in Computer Engineering at{" "}
               <span className="font-semibold text-neutral-900 dark:text-neutral-100">
-                Vivekanand Education Society's Institute of Technology (VESIT)
+                Vivekanand Education Society&apos;s Institute of Technology (VESIT)
               </span>
               . This transformative journey has been marked by continuous learning, innovation, and a relentless pursuit
               of excellence in technology.

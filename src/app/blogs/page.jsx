@@ -139,7 +139,7 @@ export default function PublicationPage() {
 
   return (
     <>
-      <NavbarDemo />
+     
       <BackgroundBoxesDemo />
       <div className="container mx-auto px-4 py-8 mt-20">
         {/* Heading Section */}
