@@ -24,6 +24,10 @@ export function TimelineDemo() {
         name: "JavaScript",
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       },
+      {
+        name: "C++",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+      }
     ],
     "Backend & Database": [
       { name: "Django", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" },
@@ -54,47 +58,95 @@ export function TimelineDemo() {
  const projects = [
   {
     id: 1,
-    title: "MetaBazaar",
-    description: "NFT marketplace with wallet authentication and IPFS integration",
+    title: "Versus",
+    description: "Real-Time and Scalable Debate & Voting Platform",
     longDescription:
-      "MetaBazaar is a feature-rich NFT marketplace built with seamless user experience in mind. It includes NFT minting with metadata storage on IPFS, wallet authentication using MetaMask, user profiles, and advanced search/filter functionality for discovering NFTs. The platform empowers creators and collectors with robust blockchain-based interactions.",
+      "Versus is a scalable debate and voting platform with real-time synchronization, threaded comments, and instant updates using WebSockets. It leverages Redis and BullMQ to handle high-volume tasks and API rate limiting. The platform features responsive UI, real-time analytics, and a highly engaging user experience.",
+    image: "/versus.png",
+    technologies: ["Next.js", "Express.js", "Socket.io", "Redis", "BullMQ"],
+    githubUrl: "https://github.com/yourusername/versus",
+    liveUrl: "https://versus.vercel.app",
+    category: "Web Development",
+  },
+  {
+    id: 2,
+    title: "MetaBazaar",
+    description: "Decentralized NFT Marketplace with IPFS & Wallet Authentication",
+    longDescription:
+      "MetaBazaar is a feature-rich decentralized NFT marketplace supporting minting, trading, and royalties via Ethereum smart contracts. It integrates wallet authentication with MetaMask, decentralized storage on IPFS, and an AI-powered NFT generator. The platform also features advanced search, filtering, and an admin dashboard with analytics.",
     image: "https://media.licdn.com/dms/image/v2/D4D22AQEtHmqfBnU50A/feedshare-shrink_2048_1536/B4DZdpdweWGsAs-/0/1749821099265?e=1753920000&v=beta&t=Z7qtMza00_C5aRh8ChkPiZAhZ_tEy6hqRSEjPffhlL0",
-    technologies: ["Next.js", "TypeScript", "IPFS", "MetaMask", "Tailwind CSS"],
+    technologies: ["Next.js", "Solidity", "Hardhat", "IPFS", "ShadCN UI", "MetaMask"],
     githubUrl: "https://github.com/rohiit257/MetaBazaar",
     liveUrl: "https://metabazaar.vercel.app/",
     category: "Web3",
   },
   {
-    id: 2,
-    title: "GetMeAJob",
-    description: "Job portal web app built with the MERN stack",
+    id: 7,
+    title: "LandLedger",
+    description: "🏡 Blockchain & AI-powered Land Registry and Record Management System",
     longDescription:
-      "GetMeAJob is a full-stack job portal application designed to connect job seekers and employers. It includes secure user authentication, job posting, job applications, and real-time messaging. Built using MongoDB, Express, React, and Node.js, the app also features JWT-based authentication, REST APIs, and a seamless communication interface between users.",
-    image: "/getmejob.png",
-    technologies: ["MongoDB", "Express", "React", "Node.js", "JWT"],
+      "LandLedger is a decentralized land record management system that leverages Blockchain, AI, and IPFS to securely store and verify property ownership records. It ensures transparency, immutability, and fraud detection in property transactions.\n\nUsers can:\n✅ Register land with location & document verification.\n✅ Transfer ownership of properties.\n✅ Detect fraudulent transactions using AI.\n✅ Perform KYC verification for secure operations.\n✅ View transaction history for each property.\n✅ Admin dashboard for property verification and fraud analysis.",
+    image: "/landledger.png",
+    technologies: ["Ethereum", "Next.js", "MongoDB", "IPFS (Pinata)", "Leaflet.js", "Gemini AI"],
+    githubUrl: "https://github.com/yourusername/landledger",
+    liveUrl: "https://landledger.vercel.app",
+    category: "Web3 + AI",
+  },
+  {
+    id: 8,
+    title: "HTTP Server in C",
+    description: "Lightweight HTTP Server implemented from scratch in C",
+    longDescription:
+      "This project is a custom-built HTTP server written in C, demonstrating low-level networking concepts using sockets and multithreading. It supports handling multiple client requests, serving static files, basic routing, and connection management. The server is optimized for performance and provides hands-on understanding of how web servers like Nginx and Apache work under the hood.",
+    image: "/httpserver.png",
+    technologies: ["C", "Sockets", "POSIX Threads", "Networking"],
+    githubUrl: "https://github.com/yourusername/http-server-c",
+    liveUrl: "",
+    category: "Systems Programming",
+  },
+  {
+    id: 3,
+    title: "GetMeAJob",
+    description: "Full-Stack Job Portal Web App",
+    longDescription:
+      "GetMeAJob is a full-stack job portal application built with the MERN stack. It provides role-based authentication with JWT and SHA256 password hashing, job posting, job applications, and recruiter-candidate chat. The app also includes scalable REST APIs and responsive UI design across devices.",
+    image: "/getmeajob.png",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT"],
     githubUrl: "https://github.com/yourusername/getmeajob",
     liveUrl: "https://getmeajob.vercel.app",
     category: "Web Development",
   },
   {
-    id: 3,
-    title: "AlgoVision",
-    description: "Interactive algorithm visualizer with animations",
+    id: 4,
+    title: "YOLO Project",
+    description: "Scalable Forum Discussion Application",
     longDescription:
-      "AlgoVision is a visual learning platform for mastering fundamental algorithms through animations and interactive controls. It supports sorting algorithms like Insertion Sort, Selection Sort, Merge Sort, and Quick Sort, as well as Binary Search and Kadane's Algorithm. Built with Next.js and styled using Tailwind CSS, the project leverages Framer Motion for animations and shadcn/ui for modern UI components.",
-    image: "/alogvisual.png",
+      "YOLO Project is a scalable discussion forum where users can create and join chat rooms for real-time conversations. Built with WebSockets for live messaging and notifications, the platform is deployed with Docker and AWS EC2 for scalability and fault tolerance. It focuses on performance, high availability, and seamless user connectivity.",
+    image: "/yolo.png",
+    technologies: ["Next.js", "MongoDB", "Docker", "WebSockets", "Express.js", "AWS EC2"],
+    githubUrl: "https://github.com/yourusername/yolo-project",
+    liveUrl: "https://yolo.vercel.app",
+    category: "Web Development",
+  },
+  {
+    id: 5,
+    title: "AlgoVision",
+    description: "Interactive Algorithm Visualizer with Animations",
+    longDescription:
+      "AlgoVision is a visual learning platform for mastering fundamental algorithms. It includes visualizations for sorting algorithms, binary search, and Kadane’s Algorithm. Built with Next.js, styled using Tailwind CSS, and animated with Framer Motion, it enhances learning with interactive controls and modern UI components.",
+    image: "/algovision.png",
     technologies: ["Next.js", "TypeScript", "Framer Motion", "shadcn/ui", "Tailwind CSS"],
     githubUrl: "https://github.com/yourusername/algovision",
     liveUrl: "https://algovision.vercel.app",
     category: "Education",
   },
   {
-    id: 4,
+    id: 6,
     title: "AirAGBot",
-    description: "AI-powered chatbot for Computer Science subjects",
+    description: "AI-powered Chatbot for Computer Science Subjects",
     longDescription:
-      "AirAGBot is an intelligent chatbot trained on core Computer Science subjects like DBMS, CN, OS, Blockchain, and OOP. It uses pre-embedded PDFs and ChromaDB for document retrieval, LangChain for contextual prompting, and Gemini AI for natural language responses. The bot is accessible via both a command-line interface (CLI) and a web interface built with Streamlit.",
-    image: "/placeholder.svg?height=400&width=600",
+      "AirAGBot is an AI-powered chatbot trained on Computer Science subjects like DBMS, CN, OS, Blockchain, and OOP. It uses ChromaDB for document retrieval, LangChain for contextual prompting, and Gemini AI for natural language responses. Available via CLI and a Streamlit-powered web interface.",
+    image: "/airagbot.png",
     technologies: ["Python", "LangChain", "Gemini AI", "ChromaDB", "Streamlit"],
     githubUrl: "https://github.com/yourusername/airagbot",
     liveUrl: "https://airagbot.streamlit.app",
@@ -229,24 +281,44 @@ export function TimelineDemo() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-6">
             Click on any project below to learn more about the technologies used and implementation details.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project) => (
               <Dialog key={project.id}>
                 <DialogTrigger asChild>
-                  <div className="cursor-pointer group relative overflow-hidden rounded-lg">
+                  <div className="cursor-pointer group relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900 shadow-lg transition-transform duration-300 hover:scale-[1.03] hover:border-indigo-700 flex flex-col h-full">
                     <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       width={500}
-                      height={500}
-                      className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] transition-transform duration-300 group-hover:scale-105"
+                      height={300}
+                      className="rounded-t-2xl object-cover h-40 md:h-48 w-full transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg">
-                      <p className="text-white font-medium text-sm md:text-base text-center px-2">{project.title}</p>
+                    <div className="flex-1 flex flex-col justify-between p-4">
+                      <div>
+                        <h3 className="text-lg font-bold text-neutral-100 mb-2">{project.title}</h3>
+                        <p className="text-neutral-400 text-sm mb-3 line-clamp-3">{project.description}</p>
+                      </div>
+                      <div className="flex flex-wrap gap-2 mb-3">
+                        {project.technologies.slice(0, 4).map((tech, idx) => (
+                          <Badge
+                            key={idx}
+                            className="bg-neutral-800 text-neutral-200 border border-neutral-700 px-2 py-1 text-xs"
+                          >
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                      <div className="flex items-center gap-2 mt-auto">
+                        <span className="text-xs text-indigo-400 group-hover:underline">Learn more</span>
+                        <ExternalLink className="w-4 h-4 text-indigo-400" />
+                      </div>
                     </div>
+                    <Badge className="absolute top-4 right-4 bg-indigo-700 text-white border-none shadow-md">
+                      {project.category}
+                    </Badge>
                   </div>
                 </DialogTrigger>
-                <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-neutral-900 border-neutral-800 [&::-webkit-scrollbar]:hidden scrollbar-hide">
+                <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-neutral-900 border border-neutral-800 [&::-webkit-scrollbar]:hidden scrollbar-hide">
                   <DialogHeader>
                     <DialogTitle className="text-2xl font-bold text-neutral-100 mb-2">{project.title}</DialogTitle>
                   </DialogHeader>
